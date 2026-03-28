@@ -1,7 +1,7 @@
 # Scribe
 A Free, Easy Way to write
 
-# THIS PROJECT IS UNDER DEEP DEVELOPMENT AND IS NOT PRODUCTION READY.
+# THIS PROJECT IS UNDER DEEP DEVELOPMENT AND IS NOT PRODUCTION READY. LOOKING FOR CONTRIBUTORS
 
 Scribe is free and open source,
 meaning you can use it for any commercial
