@@ -2,12 +2,10 @@ import {
     addChapter,
     setCurrentChapter,
     getChapters,
-    updateCurrentChapterContent,
-    getCurrentChapter
+    updateCurrentChapterContent
 } from "./book";
 
 import {
-    clearEditorText,
     getEditorText,
     initEditor,
     setEditorText

@@ -49,6 +49,6 @@ export function updateCurrentChapterContent(content: string) {
     }
 }
 
-export function saveCurrentChapter(chapter: Chapter) {
+export function saveCurrentChapter() {
     // TODO, add chapter saving
 }

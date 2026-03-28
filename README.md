@@ -10,6 +10,17 @@ bestseller, you don't owe me anything!
 
 Scribe is Free And Open Source Software (FOSS) and always will be.
 
+## Features:
+
+### Easy to use
+Very easy to pick up and use. Designed as an alternative to complicated/hard to use word processors.
+
+### Lightweight
+Built upon Tauri, the app is a single executable with a minimum of 10MB.
+
+### Free and Open Source
+Completely free for personal or commercial enter!
+
 ## Contribute
 There are many ways you can help the development of this project!
 ### Donating
