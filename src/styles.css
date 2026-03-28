@@ -1,4 +1,5 @@
 body {
+    background-color: lightblue;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -8,7 +9,7 @@ body {
 }
 
 #menuBar {
-    background: #f0f0f0;
+    background: darkgray;
     border-bottom: 1px solid #ccc;
     padding: 6px 10px;
     display: flex;

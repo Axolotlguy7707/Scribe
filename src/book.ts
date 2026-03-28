@@ -4,7 +4,7 @@
 let bookTitle: string;
 let publisher: string;
 let author: string;
-let chapters: string[] = [];
+let chapters: Chapter[] = [];
 
 export type Chapter = {
     title: string;
