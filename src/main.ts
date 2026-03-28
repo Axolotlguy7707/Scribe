@@ -1,11 +1,11 @@
 import {clearEditorText, initEditor, setEditorText} from "./editor";
 
-let newButton: HTMLElement = document.getElementById("new");
+let newButton: any = document.getElementById("new");
 
 initEditor();
 
 setEditorText("Hello World!");
 
-newButton.addEventListener("click", (e) => {
+newButton.addEventListener("click", () => {
     clearEditorText();
 })
