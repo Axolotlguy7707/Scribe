@@ -35,3 +35,51 @@ body {
 #menuBar button:hover {
     background: #e0e0e0;
 }
+#layout {
+    display: flex;
+    height: calc(100vh - 40px); /* minus menu bar */
+}
+
+#sidebar {
+    width: 220px;
+    background: #f5f5f5;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sidebar h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#chapterList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#chapterList li {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#chapterList li:hover {
+    background: #e0e0e0;
+}
+
+#chapterList li.active {
+    background: #d0d0d0;
+    font-weight: bold;
+}
+
+#editor {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.6;
+}
