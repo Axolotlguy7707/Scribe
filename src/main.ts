@@ -15,8 +15,13 @@ import {
     initSidebar,
     refreshSidebar
 } from "./sidebar";
+import {setColorTheme} from "./themes.ts";
 
 let newChapButton: any = document.getElementById("newChapter");
+
+let lightButton: any = document.getElementById("lightMode");
+let darkButton: any = document.getElementById("darkMode");
+
 
 // --- Initialize editor + sidebar ---
 initEditor();
@@ -49,3 +54,45 @@ newChapButton.addEventListener("click", () => {
     // Refresh sidebar
     refreshSidebar();
 });
+
+// Dropdown button logic
+
+// MULTI-MENU DROPDOWN LOGIC
+document.querySelectorAll('.menu').forEach(menu => {
+    const button = menu.querySelector('.menu-button') as HTMLButtonElement;
+    const dropdown = menu.querySelector('.dropdown') as HTMLDivElement;
+
+    // Toggle this menu
+    button.addEventListener('click', e => {
+        e.stopPropagation();
+
+        // Close all other menus
+        document.querySelectorAll('.dropdown.open').forEach(d => {
+            if (d !== dropdown) d.classList.remove('open');
+        });
+
+        dropdown.classList.toggle('open');
+    });
+
+    // Close when clicking a menu item
+    dropdown.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', () => {
+            dropdown.classList.remove('open');
+        });
+    });
+});
+
+// Close all menus when clicking outside
+document.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown.open')
+        .forEach(d => d.classList.remove('open'));
+});
+
+// T H E M E
+lightButton.addEventListener('click', () => {
+    setColorTheme(1);
+})
+
+darkButton.addEventListener('click', () => {
+    setColorTheme(2);
+})

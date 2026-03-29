@@ -11,15 +11,26 @@
 <body>
 <nav id="menuBar">
 
-  <details class="menu">
-    <summary>File</summary>
-    <button id="new">New</button>
-    <button id="open">Open</button>
-    <button id="save">Save</button>
-    <button id="newChapter">New Chapter</button>
-  </details>
+  <div class="menu">
+    <button class="menu-button">File</button>
+    <div class="dropdown">
+      <button id="new">New</button>
+      <button id="open">Open</button>
+      <button id="save">Save</button>
+      <button id="newChapter">New Chapter</button>
+    </div>
+  </div>
+
+  <div class="menu">
+    <button class="menu-button">Theme</button>
+    <div class="dropdown">
+      <button id="lightMode">Light</button>
+      <button id="darkMode">Dark</button>
+    </div>
+  </div>
 
 </nav>
+
 
 
 <div id="layout">
