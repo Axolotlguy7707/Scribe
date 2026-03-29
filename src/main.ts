@@ -96,3 +96,10 @@ lightButton.addEventListener('click', () => {
 darkButton.addEventListener('click', () => {
     setColorTheme(2);
 })
+
+document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.key === "b") {
+        e.preventDefault();
+        document.execCommand("bold");
+    }
+});

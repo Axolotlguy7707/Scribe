@@ -118,14 +118,15 @@ body {
 #editor {
     flex: 1;
     padding: 20px;
-    border: none;
     outline: none;
-    resize: none;
-    font-size: 16px;
-    line-height: 1.6;
+    border: none;
     background: var(--editor-bg);
     color: var(--editor-text);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-y: auto;
 }
+
 
 .menu {
     position: relative;

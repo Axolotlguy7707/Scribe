@@ -1,21 +1,14 @@
-﻿let editorEl: HTMLTextAreaElement;
-
-export function initEditor()
-{
-    editorEl = document.querySelector("#editor") as HTMLTextAreaElement;
+﻿export function initEditor() {
+    const editor = document.getElementById("editor") as HTMLDivElement;
+    editor.innerHTML = "";
 }
 
-export function getEditorText()
-{
-    return editorEl.value;
+export function getEditorText(): string {
+    const editor = document.getElementById("editor") as HTMLDivElement;
+    return editor.innerHTML;
 }
 
-export function setEditorText(text: string)
-{
-    editorEl.value = text;
-}
-
-export function clearEditorText()
-{
-    editorEl.value = "";
+export function setEditorText(html: string) {
+    const editor = document.getElementById("editor") as HTMLDivElement;
+    editor.innerHTML = html;
 }
