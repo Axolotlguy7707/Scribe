@@ -30,19 +30,22 @@ refreshSidebar();
 
 // --- New Chapter button ---
 newChapButton.addEventListener("click", () => {
-    // 1. Save current chapter before switching
+    // Save current chapter
     updateCurrentChapterContent(getEditorText());
 
-    // 2. Add a new chapter
-    addChapter("New Chapter");
+    // Determine next chapter number
+    const newChNum = getChapters().length + 1;
 
-    // 3. Switch to the new chapter
+    // Add new chapter
+    addChapter("Chapter " + newChNum);
+
+    // Switch to it
     const newIndex = getChapters().length - 1;
     setCurrentChapter(newIndex);
 
-    // 4. Load the new chapter into the editor
+    // Clear editor
     setEditorText("");
 
-    // 5. Update sidebar UI
+    // Refresh sidebar
     refreshSidebar();
 });
