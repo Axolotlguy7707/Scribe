@@ -19,7 +19,7 @@ Very easy to pick up and use. Designed as an alternative to complicated/hard to 
 Built upon Tauri, the app is a single executable with a minimum of 10MB.
 
 ### Free and Open Source
-Completely free for personal or commercial enter!
+Completely free for personal or commercial use!
 
 ## Contribute
 There are many ways you can help the development of this project!
