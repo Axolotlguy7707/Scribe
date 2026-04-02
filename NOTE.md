@@ -1,0 +1,1 @@
+.scribe files require `npm install jszip`
