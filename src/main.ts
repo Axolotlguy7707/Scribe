@@ -2,7 +2,7 @@ import {
     addChapter,
     setCurrentChapter,
     getChapters,
-    updateCurrentChapterContent
+    updateCurrentChapterContent, saveCurrentChapter
 } from "./book";
 
 import {
@@ -21,6 +21,8 @@ let newChapButton: any = document.getElementById("newChapter");
 
 let lightButton: any = document.getElementById("lightMode");
 let darkButton: any = document.getElementById("darkMode");
+
+let saveChapButton: any = document.getElementById("save");
 
 
 // --- Initialize editor + sidebar ---
@@ -102,4 +104,8 @@ document.addEventListener("keydown", (e) => {
         e.preventDefault();
         document.execCommand("bold");
     }
+});
+
+saveChapButton.addEventListener("click", () => {
+    saveCurrentChapter();
 });

@@ -50,5 +50,5 @@ export function updateCurrentChapterContent(content: string) {
 }
 
 export function saveCurrentChapter() {
-    // TODO, add chapter saving
+    localStorage.setItem(getCurrentChapter().title, getCurrentChapter().content);
 }
