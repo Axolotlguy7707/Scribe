@@ -50,5 +50,5 @@ export function updateCurrentChapterContent(content: string) {
 }
 
 export function saveCurrentChapter() {
-    localStorage.setItem(getCurrentChapter().title, getCurrentChapter().content);
+    localStorage.setItem(getCurrentChapter().title + "_" + bookTitle, getCurrentChapter().content);
 }
