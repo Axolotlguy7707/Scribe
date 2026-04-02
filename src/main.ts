@@ -2,7 +2,7 @@ import {
     addChapter,
     setCurrentChapter,
     getChapters,
-    updateCurrentChapterContent, saveCurrentChapter
+    updateCurrentChapterContent
 } from "./book";
 
 import {
@@ -16,6 +16,7 @@ import {
     refreshSidebar
 } from "./sidebar";
 import {setColorTheme} from "./themes.ts";
+import {downloadProject} from "./saver.ts";
 
 let newChapButton: any = document.getElementById("newChapter");
 
@@ -107,5 +108,5 @@ document.addEventListener("keydown", (e) => {
 });
 
 saveChapButton.addEventListener("click", () => {
-    saveCurrentChapter();
+    downloadProject();
 });

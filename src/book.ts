@@ -1,7 +1,7 @@
 ﻿// File used for pretty much everything a typical Scribe project would need.
 
 // Metadata
-let bookTitle: string = "";
+let bookTitle: string = "test"; //TODO
 let publisher: string = "";
 let author: string = "";
 
@@ -47,8 +47,4 @@ export function updateCurrentChapterContent(content: string) {
     if (currentChapterIndex >= 0) {
         chapters[currentChapterIndex].content = content;
     }
-}
-
-export function saveCurrentChapter() {
-    localStorage.setItem(getCurrentChapterIndex() + "_" + bookTitle, JSON.stringify(getCurrentChapter()));
 }
