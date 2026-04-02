@@ -108,5 +108,6 @@ document.addEventListener("keydown", (e) => {
 });
 
 saveChapButton.addEventListener("click", () => {
+    updateCurrentChapterContent(getEditorText());
     downloadProject();
 });

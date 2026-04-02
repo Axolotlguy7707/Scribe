@@ -28,12 +28,13 @@ export async function downloadProject() {
 
     const chaptersFolder = zip.folder("chapters");
     chapters.forEach(ch => {
-        chaptersFolder?.file(`${ch.title}.md`, ch.content)
+        console.log("chapter:", ch.title, ch.content);
+        chaptersFolder?.file(`${sanitizeFileName(ch.title)}.md`, ch.content)
     });
 
     zip.file("project.json", JSON.stringify(projectMeta, null, 2));
 
-    const blob = await zip.generateAsync({type: "blob"});
+    const blob = await zip.generateAsync({ type: "blob", });
 
     const url = URL.createObjectURL(blob);
 
